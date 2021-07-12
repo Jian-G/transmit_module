@@ -10,12 +10,14 @@ tensor_dict = {}
 
 stdout = sys.stdout
 
+
+
 def client(filename, host, port, interval="0"):
     with subprocess.Popen( ["iperf3", "-c", host, 
                             "-F", filename,
                             "-i", interval,
                             "--verbose",
-                            "--logfile",filename + '.log',
+                            "--logfile", filename + ".log",
                             "-p", port],
                             stdout=subprocess.PIPE, universal_newlines=True) as process:
         while True:
