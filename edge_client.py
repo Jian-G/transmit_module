@@ -6,7 +6,7 @@ import time
 import logging
 
 flag=0
-stdout = sys.stdout
+stdout = sys.stdout()
 
 
 def client():
@@ -25,6 +25,10 @@ def client():
                 pass
 
                 print(output.strip())
+
+
+            
+
 
 if __name__ == "__main__":
     thread_client = Thread(target=client)
