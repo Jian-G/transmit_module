@@ -1,0 +1,77 @@
+iperf 3.10.1
+Darwin B000000119650 18.7.0 Darwin Kernel Version 18.7.0: Tue Aug 20 16:57:14 PDT 2019; root:xnu-4903.271.2~2/RELEASE_X86_64 x86_64
+-----------------------------------------------------------
+Server listening on 5202 (test #1)
+-----------------------------------------------------------
+iperf3: interrupt - the server has terminated
+iperf 3.10.1
+Darwin B000000119650 18.7.0 Darwin Kernel Version 18.7.0: Tue Aug 20 16:57:14 PDT 2019; root:xnu-4903.271.2~2/RELEASE_X86_64 x86_64
+-----------------------------------------------------------
+Server listening on 5202 (test #1)
+-----------------------------------------------------------
+iperf3: interrupt - the server has terminated
+iperf 3.10.1
+Darwin B000000119650 18.7.0 Darwin Kernel Version 18.7.0: Tue Aug 20 16:57:14 PDT 2019; root:xnu-4903.271.2~2/RELEASE_X86_64 x86_64
+-----------------------------------------------------------
+Server listening on 5202 (test #1)
+-----------------------------------------------------------
+iperf3: interrupt - the server has terminated
+iperf 3.10.1
+Darwin B000000119650 18.7.0 Darwin Kernel Version 18.7.0: Tue Aug 20 16:57:14 PDT 2019; root:xnu-4903.271.2~2/RELEASE_X86_64 x86_64
+-----------------------------------------------------------
+Server listening on 5202 (test #1)
+-----------------------------------------------------------
+Time: Mon, 12 Jul 2021 11:09:10 UTC
+Accepted connection from 172.24.32.137, port 60153
+      Cookie: 6mpb4h2tsqdbsstnyhkbbr5n4nrsesykxkfx
+      TCP MSS: 0 (default)
+[  6] local 172.24.178.109 port 5202 connected to 172.24.32.137 port 60154
+Starting Test: protocol: TCP, 1 streams, 131072 byte blocks, omitting 0 seconds, 10 second test, tos 0
+iperf 3.10.1
+Darwin B000000119650 18.7.0 Darwin Kernel Version 18.7.0: Tue Aug 20 16:57:14 PDT 2019; root:xnu-4903.271.2~2/RELEASE_X86_64 x86_64
+-----------------------------------------------------------
+Server listening on 5202 (test #2)
+-----------------------------------------------------------
+iperf3: interrupt - the server has terminated
+iperf 3.10.1
+Darwin B000000119650 18.7.0 Darwin Kernel Version 18.7.0: Tue Aug 20 16:57:14 PDT 2019; root:xnu-4903.271.2~2/RELEASE_X86_64 x86_64
+-----------------------------------------------------------
+Server listening on 5202 (test #1)
+-----------------------------------------------------------
+Time: Mon, 12 Jul 2021 11:11:10 UTC
+Accepted connection from 172.24.32.137, port 60186
+      Cookie: bzcxvcca5wku3f4sxwaq3mzgevd7t32da2sn
+      TCP MSS: 0 (default)
+[  6] local 172.24.178.109 port 5202 connected to 172.24.32.137 port 60187
+Starting Test: protocol: TCP, 1 streams, 131072 byte blocks, omitting 0 seconds, 10 second test, tos 0
+iperf 3.10.1
+Darwin B000000119650 18.7.0 Darwin Kernel Version 18.7.0: Tue Aug 20 16:57:14 PDT 2019; root:xnu-4903.271.2~2/RELEASE_X86_64 x86_64
+-----------------------------------------------------------
+Server listening on 5202 (test #2)
+-----------------------------------------------------------
+iperf3: interrupt - the server has terminated
+iperf 3.10.1
+Darwin B000000119650 18.7.0 Darwin Kernel Version 18.7.0: Tue Aug 20 16:57:14 PDT 2019; root:xnu-4903.271.2~2/RELEASE_X86_64 x86_64
+-----------------------------------------------------------
+Server listening on 5202 (test #1)
+-----------------------------------------------------------
+Time: Mon, 12 Jul 2021 11:12:36 UTC
+Accepted connection from 172.24.32.137, port 60213
+      Cookie: v2czythvosucwbpkk6qfbyvw22sxuqvlcf47
+      TCP MSS: 0 (default)
+[  6] local 172.24.178.109 port 5202 connected to 172.24.32.137 port 60214
+Starting Test: protocol: TCP, 1 streams, 131072 byte blocks, omitting 0 seconds, 10 second test, tos 0
+[ ID] Interval           Transfer     Bitrate
+[  6]   0.00-0.06   sec  0.00 Bytes  0.00 bits/sec                  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+Test Complete. Summary Results:
+[ ID] Interval           Transfer     Bitrate
+[  6] (sender statistics not available)
+        Sent 0.00 Byte / 0.00 Byte (100%) of data/receive/tensor/receive.txt
+[  6]   0.00-0.06   sec  0.00 Bytes  0.00 bits/sec                  receiver
+iperf 3.10.1
+Darwin B000000119650 18.7.0 Darwin Kernel Version 18.7.0: Tue Aug 20 16:57:14 PDT 2019; root:xnu-4903.271.2~2/RELEASE_X86_64 x86_64
+-----------------------------------------------------------
+Server listening on 5202 (test #2)
+-----------------------------------------------------------
+iperf3: interrupt - the server has terminated
