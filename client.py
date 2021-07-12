@@ -8,16 +8,14 @@ model_dict = {}
 param_dict = {}
 tensor_dict = {}
 
-stdout = sys.stdout()
+stdout = sys.stdout
 
-
-
-def client(filename, host, port, interval=0):
+def client(filename, host, port, interval="0"):
     with subprocess.Popen( ["iperf3", "-c", host, 
                             "-F", filename,
                             "-i", interval,
                             "--verbose",
-                            "--logfile", filename + 'log',
+                            "--logfile",filename + '.log',
                             "-p", port],
                             stdout=subprocess.PIPE, universal_newlines=True) as process:
         while True:
@@ -37,7 +35,8 @@ def send_check_loop(type):
                     model_dict[filename] = 0
             for filename, status in model_dict.items():
                 if status == 0:
-                    file_path = "data/send/model/" + filename
+                    print(filename)
+                    file_path = filename
                     thread_client = Thread(target=client, args=(file_path, core.EDGE_HOST, core.CLOUD_SENTTO_EDGE, ))
                     thread_client.start()
                     model_dict[filename] = 1
@@ -47,7 +46,8 @@ def send_check_loop(type):
                     tensor_dict[filename] = 0
             for filename, status in tensor_dict.items():
                 if status == 0:
-                    file_path = "data/send/tensor/" + filename
+                    print(filename)
+                    file_path = filename
                     thread_client = Thread(target=client, args=(file_path, core.CLOUD_HOST, core.EDGE_SENDTO_CLOUD, ))
                     thread_client.start()
                     tensor_dict[filename] = 1
