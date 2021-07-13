@@ -21,14 +21,17 @@ def client(filename, host, port, interval="0"):
                             "--logfile", filename + ".log",
                             "-p", port],
                             stdout=subprocess.PIPE, universal_newlines=True) as process:
+
+        print(process.pid)
         while True:
             output = process.stdout.readline()
             if output == '' and process.poll() is not None:
+                print("Client has shut!")
                 break
             if output:
                 pass
+        rc = process.poll()
 
-                print(output.strip())
 
 def send_check_loop(type):
     while(True):
