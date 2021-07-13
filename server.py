@@ -6,6 +6,7 @@ import core
 def server(save_path, port, interval="0"):
     with subprocess.Popen( ["iperf3","-s", 
                             "-F", save_path,
+                            "-fM",
                             "-i", interval,
                             "--verbose",
                             "--logfile", save_path + ".log",

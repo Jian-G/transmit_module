@@ -16,6 +16,7 @@ def client(filename, host, port, interval="0"):
     with subprocess.Popen( ["iperf3", "-c", host, 
                             "-F", filename,
                             "-i", interval,
+                            "-fM",
                             "--verbose",
                             "--logfile", filename + ".log",
                             "-p", port],
